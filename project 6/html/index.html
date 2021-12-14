@@ -1,0 +1,196 @@
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>About Alexander Lake</title>
+        <link rel="stylesheet" href="../css/main.css">
+  
+      
+        
+    </head>
+    <body>
+        <section id = "griding">
+            
+            <header>
+                <h1>Alexander Lake</h1>
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                
+                
+            </header>
+            <aside id = "menu">
+                <nav>
+                     <h1 id = "aboutClick">About</h1>
+                     <h1 id = "fishingClick">Fishing</h1>
+                     <h1 id = "campingClick">Camping</h1>
+                     <h1 id = "visitorClick">Visitor</h1>
+
+                </nav>
+
+                
+            </aside>
+            <footer>
+                <h3>Andrew Campbell</h3>
+                <a href="https://www.linkedin.com/in/andrew-campbell-3935b313a/"><img src="..//img/link.png" alt="Linkedin" width="70" /></a>
+                
+            </footer>
+            <section id ="about">
+                <article id = "about_layout">
+                    <h1>About</h1>
+                    <img src="../img/alexander_lake.jpg" alt="alexander_lake" height="200px">
+                    <p>Background: <br> Alexander Lake is an aesthetic natural lake located in heavily timbered country 
+                        with very little open shoreline. It is 23 acres, 9,360 feet in elevation,
+                        with 28 feet maximum depth. Several campsites are present along the northern
+                        lake margin. The fishery is sustained by aerial stocking of brook trout. 
+                           Angling and Camping pressure is heavy. Will need a high clearence Awd/4wd vehicle.
+                    </p>
+                    <p>
+                        Directions: <br> To access Alexander lake from Kamas Utah take Highway U-150 
+                        3 miles east to FR041 which is a left hand turn. Follow road Up the switchbacks
+                        until you come to a fork in the road.Take the right fork and follow it until you
+                        reach another fork and take a right. Any paths you take after that will take you
+                        to different parts of the lake. 
+                    
+                    </p>
+                    
+                </article>
+            </section>
+            <section id = "fishing">
+                <h1>Fishing</h1>
+                <img src="..//img/stocking.jpg" alt="stocking" width="250px" >
+                <img src="..//img/brook1.jpg" alt="brook1" width="250" >
+                <img src="..//img/brook3.jfif" alt="brook3" width="250px" >
+                <p>
+                    Alexander lake is a aerial planted lake which means every year new fish are added by
+                    dropping them out of an airplane into the lake. <br> <br>
+                    Types of Fish/Catch limits: <br>
+                    Brook Trout : Limit is 8 per person
+                </p>
+            </section>
+            <section id = "camping">
+                <h1>Camping</h1>
+                <img src="..//img/camp.jfif" alt="camp" width="250px">
+                <img src="..//img/forest.jpg" alt="forest" width="400px">
+                <p>
+                    Passes: <br>
+                    3-day Pass: $6 <br>7-day Pass: $12 <br> Annual 12-Month Pass: $45 <br> <br>
+                    Rules and Regulations: Camping has a 14 day Limit. Fire Danger warning will be posted when entering park indicating whether or not a fire may be lite. <br>
+                    <br> Any other information can be found on the <a href="https://www.fs.usda.gov/uwcnf" style="color:rgb(143, 221, 143)">Uinta Wasatch Cache National forest website.</a> 
+                </p>
+                
+            </section>
+            <div class = "container">
+                
+            </div>
+             <!--form start-->
+            <section id = "visitor">
+                <h1 id="visForm">Visitor Form</h1>
+                <button id="checkVisitorButton" type="button">Check Visitors</button>
+                <button id="cancelButton">Cancel Form</button>
+                <div class = "successMsg" style="display: none;">Thank you for Logging your visit!!!</div>
+                <form name ="Form" id = "Form" onsubmit="return validateForm()">
+                    <ul class="flex">
+                        <li class="section-display">
+                            <label for="fName">First Name</label>
+                            <input type="text" id="fName" name="fName" placeholder="Enter First Name" required>
+                            <small><br> Error Message</small>
+                        </li>
+                        <li class="section-display">
+                            <label for="lName">Last Name</label>
+                            <input type="text" id="lName" name="lName" placeholder="Enter Last Name" required>
+                            <small>Error Message</small>
+                        </li>
+                        <li class="section-display">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Enter Address" required>
+                            <small> Error Message</small>
+                        </li>
+                        <li class="section-display">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="Enter State" required>
+                            <small>Error Message</small>
+                        </li>
+                        <li class="section-display">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="Enter Zip Code" required>
+                            <small>Error Message</small>
+                        </li>
+                    
+                    <li class="section-display">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter Email" required>
+                        <small>Error Message</small>
+                    </li>
+                    <li class="section-display">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                        <small>Error Message</small>
+                    </li>
+                    <li>
+                        <h2>How did you find my page:</h2>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="google" name="find-page" value="google">
+                        <label for="google">Google</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="friend" name="find-page" value="friend">
+                        <label for="friend">Friend</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="newspaper" name="find-page" value="newspaper">
+                        <label for="newspaper">News paper</label>
+                        
+                    </li>
+                    <li>
+                        <button id="formSubmit" type="submit">Submit Form</button>
+                    </li>
+                    </ul>
+
+                </form>
+               
+            </section>
+             <!--form end-->
+
+            <!--table-->
+            <section id="table">
+                <button id="addVisitor">Add Visitor</button>
+
+                <table id="tableContainer" class="tableContainer">
+                <tr >
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Id</th>
+                    <th>Action</th>
+                </tr>
+      
+   
+                </table  
+
+            </section>
+            <!--Table end-->
+        </section>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script type="module"  src="../js/controller.js"></script>
+        <script type= "module" src="../js/validation.js"></script>
+        <script type= "module" src="../js/model.js"></script>
+        <script>
+        /*$(document).ready(function() {
+        initValidation("#myform");
+
+        });*/
+        </script>
+    </body>
+</html>
+
+            
